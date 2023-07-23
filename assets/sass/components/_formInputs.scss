@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+  text-align: center;
+  &_input {
+    color: #000;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 20rem 0 0 20rem ;
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+     
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(#000, .1);
+      border-bottom: 3px solid orange;
+    }
+    
+    &:focus:invalid {
+      border-bottom: 3px solid orange;
+    }
+    
+    &::-webkit-input-placeholder {
+      color: #222;
+    }
+    
+  }
+  
+  &_label {
+     font-size: 1.4rem;
+     margin-left: 2rem;
+     margin-top: .7rem;
+     display: block;
+     transition: all .5s;
+  }
+  
+  &_input:placeholder-shown ~ &_label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+}

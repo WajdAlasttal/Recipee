@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipee</title>
+    <!-- Fontawesome file link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Sass CSS -->
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <!--Custom css  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar justify-around bg-black text-white">
+      <p class="site-title"><i class="fa-solid fa-burger"></i>Recipee</p>
+      <ul class="display-f">
+        <li class="ml-1 text-hover-orange">
+          <a href="#" class="fs-lg">Recipies</a>
+          <ul>
+            <li><a href="#" class="link">pizza</a></li>
+            <li><a href="#" class="link">mango</a></li>
+            <li><a href="#" class="link">avocado</a></li>
+            <li><a href="#" class="link">pasta</a></li>
+            <li><a href="#" class="link">steak</a></li>
+            <li><a href="#" class="link">pudding</a></li>
+            <li><a href="#" class="link">hamburger</a></li>
+            <li><a href="#" class="link">cake</a></li>
+          </ul>
+        </li>
+        <li class="ml-1 text-hover-orange">
+            <a href="#"class="fs-lg">About Us</a>
+          </li>
+      </ul>
+    </nav>
+    <div class="home">
+        <div class="home-content">
+        <h1 class="fs-xxl">Enjoy our Tasty Recipies</h1>
+        <h3 class="fs-lg mb-3" >Hungry? Get Started</h3>
+        <div class="form display-f">
+            <input type="text" class="form_input" placeholder="Search for recipes" id="name">
+            <button type="submit" class="btn"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+    </div>
+
+    <div class="recipes">
+        <h2 class="header">Recipes</h2>
+        <div  class="row" id="data">
+            <div class="col-12-xs col-6-md col-3-lg col-3-xl">
+              <div class="card p-0">
+                <h3 class="card-title m-1">Soup</h3>
+                <img src="./assets/images/hero-banner-small.jpg" alt="">
+                <p class="m-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, hic!</p>
+              </div>
+            </div>
+              <div class="col-12-xs col-6-md col-3-lg col-3-xl">
+                <div class="card p-0">
+                  <h3 class="card-title m-1">Pasta</h3>
+                  <img src="./assets/images/recipe.jpg" alt="">
+                  <p class="m-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, hic!</p>
+                </div>
+            </div> 
+            <div class="col-12-xs col-6-md col-3-lg col-3-xl">
+                <div class="card p-0">
+                  <h3 class="card-title m-1">Soup</h3>
+                  <img src="./assets/images/hero-banner-small.jpg" alt="">
+                  <p class="m-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, hic!</p>
+                </div>
+            </div> 
+            <div class="col-12-xs col-6-md col-3-lg col-3-xl">
+                <div class="card p-0">
+                  <h3 class="card-title m-1">Pasta</h3>
+                  <img src="./assets/images/recipe.jpg" alt="">
+                  <p class="m-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, hic!</p>
+                </div>
+            </div> 
+    </div>
+    </div>
+    <footer class="footer bg-black text-white">
+        <p>Developed by Wejdan alasttal - All rights reserved</p>
+    </footer>
+
+
+    <!-- JQuery file link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!--Custom JS file -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
